@@ -8,6 +8,7 @@ import Footer from '../../components/Footer/Footer';
 import styles from './Home.module.sass';
 import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
+import FirstNamingPlatformList from './FirstNamingPlatformList';
 
 const Home = props => {
   const [index, setIndex] = useState(0);
@@ -54,6 +55,9 @@ const Home = props => {
                   DASHBOARD
                 </Link>
               </div>
+            </div>
+            <div className={styles.firstNamingPlatformContainer}>
+             <FirstNamingPlatformList />
             </div>
             <div className={styles.greyContainer}>
               <SlideBar
