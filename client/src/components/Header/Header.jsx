@@ -72,7 +72,9 @@ class Header extends React.Component {
                 </Link>
               </li>
               <li>
-                <span className={styles.logOut} onClick={this.logOut}>Logout</span>
+                <span className={styles.logOut} onClick={this.logOut}>
+                  Logout
+                </span>
               </li>
             </ul>
           </div>
@@ -124,7 +126,7 @@ class Header extends React.Component {
           </div>
         </div>
         <div className={styles.navContainer}>
-          <Logo alt='blue_logo' />         
+          <Logo alt='blue_logo' />
           <div className={styles.leftNav}>
             <div className={styles.nav}>
               <ul>
@@ -172,7 +174,7 @@ class Header extends React.Component {
                       <a href='http://www.google.com'>HOW IT WORKS</a>
                     </li>
                     <li>
-                      <a href='http://www.google.com'>PRICING</a>
+                      <Link to='/pricing'>PRICING</Link>
                     </li>
                     <li>
                       <a href='http://www.google.com'>AGENCY SERVICE</a>
