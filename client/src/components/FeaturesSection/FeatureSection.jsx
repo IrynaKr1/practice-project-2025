@@ -16,7 +16,7 @@ function FeatureSection () {
         <ul className={styles.featureSectionList}>
           <div className={styles.featuresSectionContainer}>
             {featureCards.map((f, i) => (
-              <li key={i}>
+              <li key={i} className={styles.featuresSectionListItem}>
                 <div className={styles.imgContainer}>
                   <img src={f.img} alt={f.title} className={styles.image}/>
                 </div>
