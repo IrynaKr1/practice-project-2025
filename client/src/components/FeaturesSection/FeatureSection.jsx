@@ -13,19 +13,20 @@ function FeatureSection () {
           with a trained Atom branding consultant who will guide your
           crowdsourcing process step-by-step to get the best results possible.
         </p>
-        <ul className={styles.featureSectionList}>
-          <div className={styles.featuresSectionContainer}>
+
+        <div className={styles.featuresSectionContainer}>
+          <ul className={styles.featureSectionList}>
             {featureCards.map((f, i) => (
-              <li key={i}>
+              <li key={i} className={styles.featuresSectionListItem}>
                 <div className={styles.imgContainer}>
-                  <img src={f.img} alt={f.title} className={styles.image}/>
+                  <img src={f.img} alt={f.title} className={styles.image} />
                 </div>
                 <h3 className={styles.title}>{f.title}</h3>
                 <p className={styles.body}>{f.body}</p>
               </li>
             ))}
-          </div>
-        </ul>
+          </ul>
+        </div>
       </div>
     </>
   );
